@@ -1,0 +1,78 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage{ctex, hyperref}
+\usepackage[T1]{fontenc}
+
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
+\usepackage{graphicx,pstricks,listings,stackengine}
+
+\usepackage{gbt7714}
+\usepackage{UCAS}
+
+\bibliographystyle{gbt7714-numerical}
+
+\setbeamertemplate{navigation symbols}{}
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+\author{汇报: 邓涛 \and 导师: 刘义军}
+\title{Linux到Windows投影以及文件传输软件的设计与实现}
+\subtitle{毕业设计开题报告}
+\institute{计算机科学学院}
+\logo{\includegraphics[width=0.15\linewidth]{pic/swpu.jpg}}
+\date{\the\year 年 \the\month 月 \the\day 日}
+
+\begin{document}
+
+% \kaishu
+\heiti
+% \yahei
+\begin{frame}
+    \titlepage
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.15\linewidth]{pic/logo_blue_guodu.jpg}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+
+\include{contents/sec1.tex}
+\include{contents/sec2.tex}
+\include{contents/sec3.tex}
+\include{contents/sec4.tex}
+
+\section{参考文献}
+
+\begin{frame}[allowframebreaks]
+    \tiny
+    \bibliography{ref}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        {\Huge\calligra Thanks!}
+    \end{center}
+\end{frame}
+
+\end{document}
